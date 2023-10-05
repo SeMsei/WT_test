@@ -12,7 +12,3 @@ public class ListModel<T>
 	public int CurrentPage { get; set; } = 1;
 	public int TotalPages { get; set; } = 1;
 }
-
-
-
-}

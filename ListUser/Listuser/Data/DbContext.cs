@@ -13,4 +13,11 @@ public class AppDbContext : DbContext
 	{
 		//Database.EnsureCreated();
 	}
+
+	protected override void OnModelCreating(ModelBuilder modelBuilder)
+	{
+		modelBuilder.Entity<User>()
+				.HasMany(c => c.Roles)
+				.WithMany(s => s.Users);
+	}
 }

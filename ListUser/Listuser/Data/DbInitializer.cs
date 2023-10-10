@@ -5,7 +5,7 @@ namespace ListUser.Data;
 
 public class DbInitializer
 {
-	public async Task SeedData(WebApplication app)
+	public static async Task SeedData(WebApplication app)
 	{
 		var _roles = new List<Role>()
 		{
